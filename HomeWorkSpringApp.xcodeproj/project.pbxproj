@@ -13,9 +13,12 @@
 		A599F020278E01C1004FFF42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A599F01E278E01C1004FFF42 /* Main.storyboard */; };
 		A599F022278E01C2004FFF42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A599F021278E01C2004FFF42 /* Assets.xcassets */; };
 		A599F025278E01C2004FFF42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A599F023278E01C2004FFF42 /* LaunchScreen.storyboard */; };
+		FF4E904BE14A1E7A283F609B /* Pods_HomeWorkSpringApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B322CDD60C771420442542F /* Pods_HomeWorkSpringApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B322CDD60C771420442542F /* Pods_HomeWorkSpringApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeWorkSpringApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A447EC26DA54445D56B4F6B3 /* Pods-HomeWorkSpringApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWorkSpringApp.release.xcconfig"; path = "Target Support Files/Pods-HomeWorkSpringApp/Pods-HomeWorkSpringApp.release.xcconfig"; sourceTree = "<group>"; };
 		A599F015278E01C1004FFF42 /* HomeWorkSpringApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWorkSpringApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A599F018278E01C1004FFF42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A599F01A278E01C1004FFF42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		A599F021278E01C2004FFF42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A599F024278E01C2004FFF42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A599F026278E01C2004FFF42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9912BC286F07C39401D0971 /* Pods-HomeWorkSpringApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWorkSpringApp.debug.xcconfig"; path = "Target Support Files/Pods-HomeWorkSpringApp/Pods-HomeWorkSpringApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF4E904BE14A1E7A283F609B /* Pods_HomeWorkSpringApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CE9F90A3EECEF77EB6C1DB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B322CDD60C771420442542F /* Pods_HomeWorkSpringApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47A18A7329693C4C971E91C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9912BC286F07C39401D0971 /* Pods-HomeWorkSpringApp.debug.xcconfig */,
+				A447EC26DA54445D56B4F6B3 /* Pods-HomeWorkSpringApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A599F00C278E01C1004FFF42 = {
 			isa = PBXGroup;
 			children = (
 				A599F017278E01C1004FFF42 /* HomeWorkSpringApp */,
 				A599F016278E01C1004FFF42 /* Products */,
+				47A18A7329693C4C971E91C4 /* Pods */,
+				2CE9F90A3EECEF77EB6C1DB7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A599F029278E01C2004FFF42 /* Build configuration list for PBXNativeTarget "HomeWorkSpringApp" */;
 			buildPhases = (
+				9ADAF3204206DBB2F79A5042 /* [CP] Check Pods Manifest.lock */,
 				A599F011278E01C1004FFF42 /* Sources */,
 				A599F012278E01C1004FFF42 /* Frameworks */,
 				A599F013278E01C1004FFF42 /* Resources */,
+				2514831919E117F2667D7285 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2514831919E117F2667D7285 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HomeWorkSpringApp/Pods-HomeWorkSpringApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HomeWorkSpringApp/Pods-HomeWorkSpringApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HomeWorkSpringApp/Pods-HomeWorkSpringApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9ADAF3204206DBB2F79A5042 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HomeWorkSpringApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A599F011278E01C1004FFF42 /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		A599F02A278E01C2004FFF42 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9912BC286F07C39401D0971 /* Pods-HomeWorkSpringApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,6 +367,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +383,7 @@
 		};
 		A599F02B278E01C2004FFF42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A447EC26DA54445D56B4F6B3 /* Pods-HomeWorkSpringApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,6 +397,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

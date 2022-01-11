@@ -1,0 +1,6 @@
+framework module Pods_HomeWorkSpringApp {
+  umbrella header "Pods-HomeWorkSpringApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
